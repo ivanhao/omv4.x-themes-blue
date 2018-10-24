@@ -13,18 +13,18 @@ if [ "$OS" != "openmediavault" ];then
     echo "您的系统不是Openmediavault，程序即将退出！"
     echo "Your OS is not Openmediavault.Now quit!"
     exit
-else
-    if [ "$V" != "4" ];then
+fi
+if [ "$V" != "4" ];then
 	echo "您的Openmediavault版本不对，不建议安装！"
 	echo "Your Openmeidavalt's version is unmatched."
 	exit
-    else
-	if [ ! -d "$Omv" ];then
+fi
+if [ ! -d "$Omv" ];then
 	    echo "OMV路径不存在，无法安装。"
 	    echo "Omv's path not exist!"
 	    exit
-	else
-	    while [ true ]               
+fi
+while [ true ]               
 		do
 		   echo -n "您的系统是：$OS $Version，OMV路径存在，是否进行安装?(y/n)"
 		   echo -n "Your OS：$OS $Version,continue?(y/n)"
@@ -49,7 +49,4 @@ else
 		       echo "请输入y/n确认是否继续！"
 		       echo "Please input y/n to comfirm!"
 		   esac
-	    done
-	fi
-    fi
-fi
+done
