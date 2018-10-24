@@ -1,8 +1,14 @@
 #!/bin/bash
 Omv="/var/www/openmediavault"
+theme="/var/www/openmediavault/css-blue/"
 OS=`cat /etc/issue|awk 'NR==1{print $1}'`
 Version=`cat /etc/issue|awk 'NR==1{print $2}'`
 V=`cat /etc/issue|awk 'NR==1{print substr($2,1,1)}'`
+if [ -d "$theme" ];then
+    echo "您已经安装过，请不要重复安装！"
+    echo "You have already installed! Now quit."
+    exit
+fi
 if [ "$OS" != "openmediavault" ];then
     echo "您的系统不是Openmediavault，程序即将退出！"
     echo "Your OS is not Openmediavault.Now quit!"
