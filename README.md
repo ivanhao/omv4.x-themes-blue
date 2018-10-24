@@ -6,6 +6,8 @@
 2. cd to the path
 3. execute the `chmod +x ./*.sh` command to make it have right permission to execute the install or uninstall.
 4. `./install.sh` to install theme.
+> Don't forget to refresh web browser's caches.
+
 ## uninstall guide ##
 `./uninstall.sh` to uninstall theme.
 
@@ -20,6 +22,7 @@
 2. 命令行cd到安装包的路径里。
 3. 执行`chmod +x ./*.sh`来让程序有执行的权限。
 4. `./install.sh`来安装，根据提示很快就完成了。然后刷新界面。
+> 不要忘记清理浏览器的缓存。
 
 ## 卸载 ##
 
