@@ -15,14 +15,14 @@ if [ "$OS" != "openmediavault" ];then
     exit
 fi
 if [ "$V" != "4" ];then
-  echo "您的Openmediavault版本不对，不建议安装！"
-  echo "Your Openmeidavalt's version is unmatched."
-  exit
+    echo "您的Openmediavault版本不对，不建议安装！"
+    echo "Your Openmeidavalt's version is unmatched."
+    exit
 fi
 if [ ! -d "$Omv" ];then
-	    echo "OMV路径不存在，无法安装。"
-	    echo "Omv's path not exist!"
-	    exit
+	  echo "OMV路径不存在，无法安装。"
+	  echo "Omv's path not exist!"
+	  exit
 fi
 while [ true ]               
   do
