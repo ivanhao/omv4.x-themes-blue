@@ -20,9 +20,9 @@ if [ "$V" != "4" ];then
     exit
 fi
 if [ ! -d "$Omv" ];then
-	  echo "OMV路径不存在，无法安装。"
-	  echo "Omv's path not exist!"
-	  exit
+    echo "OMV路径不存在，无法安装。"
+    echo "Omv's path not exist!"
+    exit
 fi
 while [ true ]               
   do
