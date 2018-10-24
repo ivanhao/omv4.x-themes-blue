@@ -31,22 +31,22 @@ while [ true ]
      read x
      case "$x" in
        y | yes ) 
-    mv $Omv/css $Omv/css-blue
-    cp -R ./css-blue $Omv/css
-    cp -R ./images-blue $Omv/
-    chown -R openmediavault-webgui:openmediavault-webgui $Omv/css
-    chown -R openmediavault-webgui:openmediavault-webgui $Omv/images-blue
-    echo "安装完成，请刷新webui界面！"
-    echo "Installation Complete,please refresh your webui!"
-    exit
-    ;;
+          mv $Omv/css $Omv/css-blue
+          cp -R ./css-blue $Omv/css
+          cp -R ./images-blue $Omv/
+          chown -R openmediavault-webgui:openmediavault-webgui $Omv/css
+          chown -R openmediavault-webgui:openmediavault-webgui $Omv/images-blue
+          echo "安装完成，请刷新webui界面！"
+          echo "Installation Complete,please refresh your webui!"
+          exit
+          ;;
 
        n | no )
-    exit
-    ;;
+          exit
+          ;;
       
        * )
-         echo "请输入y/n确认是否继续！"
-         echo "Please input y/n to comfirm!"
+          echo "请输入y/n确认是否继续！"
+          echo "Please input y/n to comfirm!"
      esac
 done
